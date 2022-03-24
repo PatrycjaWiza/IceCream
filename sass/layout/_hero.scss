@@ -1,0 +1,33 @@
+.hero {
+  background-color: $light-pink-bg;
+  min-height: 446px;
+}
+.hero-ice,
+.hero-ellipse {
+  position: absolute;
+}
+.hero-ellipse {
+  top: 83px;
+  right: 0px;
+}
+.hero-ice {
+  top: 87px;
+  right: 32px;
+}
+.hero__title {
+  font-family: $secondary-font;
+  font-size: 26px;
+  line-height: 1.154;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 218px;
+  font-weight: normal;
+  margin-bottom: 19px;
+  padding-top: 137px;
+}
+.hero__title_accent {
+  font-size: 48px;
+  line-height: 0.958;
+  color: $pink-accent;
+}
