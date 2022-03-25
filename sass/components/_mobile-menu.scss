@@ -16,17 +16,17 @@
 .mobile-menu {
   margin-top: 136px;
 }
-.mobile-menu__item {
+.mobile-menu__link {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.286;
   color: $white-accent;
+  cursor: pointer;
 
   &:hover {
     color: $pink-accent;
   }
-
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
+}
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
 }
