@@ -3,28 +3,28 @@
   margin-top: 121px;
 }
 .products__description {
-  font-family: "Titan One";
+  font-family: $secondary-font;
   font-size: 18px;
   line-height: 1.167;
   text-align: center;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: $light-pink-accent;
   margin: 0;
   margin-bottom: 15px;
 }
 .products__title {
-  font-family: "Titan One";
+  font-family: $secondary-font;
   font-size: 34px;
   line-height: 1.147;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $pink-accent;
   padding-bottom: 140px;
 }
 
 .products__item {
-  background: #ffb8ca;
+  background: $light-pink-accent;
   border-radius: 24px;
   max-width: 280px;
   max-height: 485px;
@@ -33,10 +33,10 @@
   position: relative;
 
   &:nth-child(2) {
-    background: #f0d1a5;
+    background: $ice-coffee-bg;
   }
   &:nth-child(3) {
-    background: #c2e297;
+    background: $milkshake-bg;
   }
 
   &:not(:last-child) {
@@ -44,7 +44,7 @@
   }
 
   &::before {
-    content: url(../images/products/products-ice_cream.png);
+    content: url(./images/products/products-ice_cream.png);
     display: block;
     width: 249px;
     height: 252px;
@@ -55,10 +55,10 @@
   }
 
   &:nth-child(2)::before {
-    content: url(../images/products/products-ice_coffee.png);
+    content: url(./images/products/products-ice_coffee.png);
   }
   &:nth-child(3)::before {
-    content: url(../images/products/products-milkshake.png);
+    content: url(./images/products/products-milkshake.png);
   }
 }
 
@@ -74,7 +74,7 @@
   padding-top: 161px;
 
   &::after {
-    content: url(../images/products/products-ellipses.svg);
+    content: url(./images/products/products-ellipses.svg);
     display: block;
     padding-top: 13px;
     width: 26px;
@@ -82,13 +82,12 @@
   }
 }
 .products__item-description {
-  font-family: "DM Sans";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: $white-accent;
   max-width: 200px;
   margin: 0 auto;
   margin-top: 30px;
@@ -99,7 +98,7 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-image: url(../images/products/products-btn.svg);
+  background-image: url(./images/products/products-btn.svg);
   margin-bottom: 41px;
 }
 @media screen and (min-width: 768px) {
@@ -126,7 +125,7 @@
     }
 
     &::before {
-      content: url(../images/products/products-ice_cream-tablet.png);
+      content: url(./images/products/products-ice_cream-tablet.png);
       width: 220px;
       height: 226px;
       top: -104px;
@@ -134,10 +133,10 @@
     }
 
     &:nth-child(2)::before {
-      content: url(../images/products/products-ice_coffee-tablet.png);
+      content: url(./images/products/products-ice_coffee-tablet.png);
     }
     &:nth-child(3)::before {
-      content: url(../images/products/products-milkshake-tablet.png);
+      content: url(./images/products/products-milkshake-tablet.png);
     }
   }
   .products__item-title {
@@ -171,17 +170,17 @@
     }
 
     &::before {
-      content: url(../images/products/products-ice_cream-desktop.png);
+      content: url(./images/products/products-ice_cream-desktop.png);
       width: 335px;
       height: 335px;
       top: -208px;
     }
 
     &:nth-child(2)::before {
-      content: url(../images/products/products-ice_coffee-desktop.png);
+      content: url(./images/products/products-ice_coffee-desktop.png);
     }
     &:nth-child(3)::before {
-      content: url(../images/products/products-milkshake-desktop.png);
+      content: url(./images/products/products-milkshake-desktop.png);
     }
   }
   .products__item-title {

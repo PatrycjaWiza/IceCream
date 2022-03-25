@@ -60,6 +60,17 @@ img {
   }
 }
 
+.section > .about {
+  padding-top: 125px;
+  background-color: #fff5f6;
+}
+
+.section > .advantages {
+  padding-top: 39px;
+  padding-bottom: 97px;
+  background-color: #fff5f6;
+}
+
 @media screen and (min-width: 768px) {
   .section.products {
     margin-bottom: 112px;
@@ -138,7 +149,7 @@ img {
 }
 
 .products__description {
-  font-family: "Titan One";
+  font-family: "Titan One", cursive;
   font-size: 18px;
   line-height: 1.167;
   text-align: center;
@@ -149,7 +160,7 @@ img {
 }
 
 .products__title {
-  font-family: "Titan One";
+  font-family: "Titan One", cursive;
   font-size: 34px;
   line-height: 1.147;
   text-align: center;
@@ -160,7 +171,7 @@ img {
 }
 
 .products__item {
-  background: #ffb8ca;
+  background: #ffa5ba;
   border-radius: 24px;
   max-width: 280px;
   max-height: 485px;
@@ -182,7 +193,7 @@ img {
 }
 
 .products__item::before {
-  content: url(../images/products/products-ice_cream.png);
+  content: url(./images/products/products-ice_cream.png);
   display: block;
   width: 249px;
   height: 252px;
@@ -193,11 +204,11 @@ img {
 }
 
 .products__item:nth-child(2)::before {
-  content: url(../images/products/products-ice_coffee.png);
+  content: url(./images/products/products-ice_coffee.png);
 }
 
 .products__item:nth-child(3)::before {
-  content: url(../images/products/products-milkshake.png);
+  content: url(./images/products/products-milkshake.png);
 }
 
 .products__item-title {
@@ -213,7 +224,7 @@ img {
 }
 
 .products__item-title::after {
-  content: url(../images/products/products-ellipses.svg);
+  content: url(./images/products/products-ellipses.svg);
   display: block;
   padding-top: 13px;
   width: 26px;
@@ -221,7 +232,6 @@ img {
 }
 
 .products__item-description {
-  font-family: "DM Sans";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
@@ -239,7 +249,7 @@ img {
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-image: url(../images/products/products-btn.svg);
+  background-image: url(./images/products/products-btn.svg);
   margin-bottom: 41px;
 }
 
@@ -270,17 +280,17 @@ img {
     margin-bottom: 0;
   }
   .products__item::before {
-    content: url(../images/products/products-ice_cream-tablet.png);
+    content: url(./images/products/products-ice_cream-tablet.png);
     width: 220px;
     height: 226px;
     top: -104px;
     left: auto;
   }
   .products__item:nth-child(2)::before {
-    content: url(../images/products/products-ice_coffee-tablet.png);
+    content: url(./images/products/products-ice_coffee-tablet.png);
   }
   .products__item:nth-child(3)::before {
-    content: url(../images/products/products-milkshake-tablet.png);
+    content: url(./images/products/products-milkshake-tablet.png);
   }
   .products__item-title {
     padding-top: 152px;
@@ -313,16 +323,16 @@ img {
     margin-right: 27px;
   }
   .products__item::before {
-    content: url(../images/products/products-ice_cream-desktop.png);
+    content: url(./images/products/products-ice_cream-desktop.png);
     width: 335px;
     height: 335px;
     top: -208px;
   }
   .products__item:nth-child(2)::before {
-    content: url(../images/products/products-ice_coffee-desktop.png);
+    content: url(./images/products/products-ice_coffee-desktop.png);
   }
   .products__item:nth-child(3)::before {
-    content: url(../images/products/products-milkshake-desktop.png);
+    content: url(./images/products/products-milkshake-desktop.png);
   }
   .products__item-title {
     font-size: 30px;
@@ -341,6 +351,112 @@ img {
   }
   .btn__products {
     margin-bottom: 50px;
+  }
+}
+
+.about__subtitle {
+  font-family: "Titan One", cursive;
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.about__title {
+  max-width: 200px;
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin: 0 auto;
+}
+
+.about__img {
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-bottom: 46px;
+}
+
+.about__article-1, .about__article-2 {
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  margin: 0 auto;
+}
+
+.about__article-1 {
+  padding-bottom: 31px;
+}
+
+.about__article-2 {
+  color: #907e82;
+  padding-bottom: 17px;
+}
+
+.advantages__item {
+  font-family: "Titan One", cursive;
+  font-size: 36px;
+  line-height: 1.139;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.advantages__item > p {
+  max-width: 230px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.667;
+  letter-spacing: normal;
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+  text-transform: none;
+}
+
+.advantages__item::before {
+  margin-bottom: 16px;
+}
+
+.advantages__item:nth-child(1)::before {
+  content: url(./images/advantages/advantages-bucket.png);
+  width: 33px;
+  height: 50px;
+  display: block;
+}
+
+.advantages__item:nth-child(2)::before {
+  content: url(./images/advantages/advantages-apples.png);
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.advantages__item:nth-child(3)::before {
+  content: url(./images/advantages/advantages-heart.png);
+  width: 44px;
+  height: 50px;
+  display: block;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item:nth-child(1)::before {
+    content: url(./images/advantages/advantages-bucket@2x.png);
+  }
+  .advantages__item:nth-child(2)::before {
+    content: url(./images/advantages/advantages-apples@2x.png);
+  }
+  .advantages__item:nth-child(3)::before {
+    content: url(./images/advantages/advantages-heart@2x.png);
   }
 }
 
@@ -389,8 +505,25 @@ img {
   background: none;
 }
 
-.btn_burger-menu {
+.btn_burger-menu, .btn_about-read-more {
   background: none;
+}
+
+.btn_about-read-more {
+  background-color: #ffffff;
+  min-width: 176px;
+  min-height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.286;
+  text-align: center;
+  color: #d41443;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn_about-read-more > .vector {
+  margin-left: 13.62px;
 }
 
 .inactive {

@@ -1,0 +1,61 @@
+.advantages__item {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 1.139;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $pink-accent;
+
+  &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+
+  & > p {
+    max-width: 230px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.667;
+    letter-spacing: normal;
+    font-family: $main-font;
+    color: $base-color;
+    text-transform: none;
+  }
+  &::before {
+    margin-bottom: 16px;
+  }
+  &:nth-child(1)::before {
+    content: url(./images/advantages/advantages-bucket.png);
+    width: 33px;
+    height: 50px;
+    display: block;
+  }
+  &:nth-child(2)::before {
+    content: url(./images/advantages/advantages-apples.png);
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
+  &:nth-child(3)::before {
+    content: url(./images/advantages/advantages-heart.png);
+    width: 44px;
+    height: 50px;
+    display: block;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advantages__item {
+    &:nth-child(1)::before {
+      content: url(./images/advantages/advantages-bucket@2x.png);
+    }
+
+    &:nth-child(2)::before {
+      content: url(./images/advantages/advantages-apples@2x.png);
+    }
+
+    &:nth-child(3)::before {
+      content: url(./images/advantages/advantages-heart@2x.png);
+    }
+  }
+}

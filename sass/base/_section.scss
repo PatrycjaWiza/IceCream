@@ -1,3 +1,12 @@
+.section > .about {
+  padding-top: 125px;
+  background-color: $pinkish-white-section-bg;
+}
+.section > .advantages {
+  padding-top: 39px;
+  padding-bottom: 97px;
+  background-color: $pinkish-white-section-bg;
+}
 @media screen and (min-width: 768px) {
   .section.products {
     margin-bottom: 112px;

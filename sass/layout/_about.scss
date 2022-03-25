@@ -1,0 +1,41 @@
+.about__subtitle {
+  font-family: $secondary-font;
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light-pink-accent;
+}
+.about__title {
+  max-width: 200px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $pink-accent;
+  margin: 0 auto;
+}
+.about__img {
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-bottom: 46px;
+}
+%article {
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  margin: 0 auto;
+}
+.about__article-1 {
+  @extend %article;
+  padding-bottom: 31px;
+}
+.about__article-2 {
+  @extend %article;
+  color: $greyish-accent;
+  padding-bottom: 17px;
+}
