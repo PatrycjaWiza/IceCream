@@ -42,7 +42,25 @@
     background: none;
   }
 
-  &_burger-menu {
+  &_burger-menu,
+  &_about-read-more {
     background: none;
+  }
+
+  &_about-read-more {
+    background-color: $white-accent;
+    min-width: 176px;
+    min-height: 44px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.286;
+    text-align: center;
+    color: $pink-accent;
+    display: block;
+    margin: 0 auto;
+
+    & > .vector {
+      margin-left: 13.62px;
+    }
   }
 }

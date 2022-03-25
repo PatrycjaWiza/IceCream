@@ -60,6 +60,17 @@ img {
   }
 }
 
+.section > .about {
+  padding-top: 125px;
+  background-color: #fff5f6;
+}
+
+.section > .advantages {
+  padding-top: 39px;
+  padding-bottom: 97px;
+  background-color: #fff5f6;
+}
+
 @media screen and (min-width: 768px) {
   .section.products {
     margin-bottom: 112px;
@@ -344,6 +355,51 @@ img {
   }
 }
 
+.about__subtitle {
+  font-family: "Titan One", cursive;
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.about__title {
+  max-width: 200px;
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin: 0 auto;
+}
+
+.about__img {
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-bottom: 46px;
+}
+
+.about__article-1, .about__article-2 {
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  margin: 0 auto;
+}
+
+.about__article-1 {
+  padding-bottom: 31px;
+}
+
+.about__article-2 {
+  color: #907e82;
+  padding-bottom: 17px;
+}
+
 .btn {
   font-family: "DM Sans", sans-serif;
   font-size: 8px;
@@ -389,8 +445,25 @@ img {
   background: none;
 }
 
-.btn_burger-menu {
+.btn_burger-menu, .btn_about-read-more {
   background: none;
+}
+
+.btn_about-read-more {
+  background-color: #ffffff;
+  min-width: 176px;
+  min-height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.286;
+  text-align: center;
+  color: #d41443;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn_about-read-more > .vector {
+  margin-left: 13.62px;
 }
 
 .inactive {
