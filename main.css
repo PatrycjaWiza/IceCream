@@ -91,20 +91,23 @@ img {
 .hero {
   background-color: #ffb8ca;
   min-height: 446px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-ice,
 .hero-ellipse {
   position: absolute;
+  z-index: 2;
 }
 
 .hero-ellipse {
-  top: 83px;
+  top: 27px;
   right: 0px;
 }
 
 .hero-ice {
-  top: 87px;
+  top: 36px;
   right: 32px;
 }
 
@@ -119,6 +122,8 @@ img {
   font-weight: normal;
   margin-bottom: 19px;
   padding-top: 137px;
+  position: inherit;
+  z-index: 3;
 }
 
 .hero__title_accent {
@@ -347,6 +352,8 @@ img {
   border-radius: 20px;
   border: none;
   min-height: 24px;
+  z-index: 3;
+  position: inherit;
 }
 
 .btn_pink {

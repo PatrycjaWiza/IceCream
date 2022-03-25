@@ -6,6 +6,8 @@
   border-radius: 20px;
   border: none;
   min-height: 24px;
+  z-index: 3;
+  position: inherit;
 
   &_pink {
     color: $white-accent;
