@@ -20,4 +20,28 @@
     background: $white-accent;
     min-width: 82.8px;
   }
+
+  &_mobile-menu {
+    min-width: 209px;
+    min-height: 44px;
+    background: $white-accent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.313;
+    text-align: center;
+    color: $pink-accent;
+    margin: 60px auto 32px;
+  }
+
+  &__mobile_close {
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    background: none;
+  }
+
+  &_burger-menu {
+    background: none;
+  }
 }
