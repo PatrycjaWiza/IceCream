@@ -1,0 +1,32 @@
+.inactive {
+  display: none;
+}
+
+.mobile-menu__container {
+  background-color: $dark-pink-bg;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  min-width: 250px;
+  min-height: 100vh;
+  padding: 0 21px;
+}
+
+.mobile-menu {
+  margin-top: 136px;
+}
+.mobile-menu__item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.286;
+  color: $white-accent;
+
+  &:hover {
+    color: $pink-accent;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}

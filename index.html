@@ -24,19 +24,62 @@
           alt="webpage_logo"
           srcset="./images/logo@2x.png 2x"
         />
-        <svg class="mobile-menu" width="20">
-          <use href="./images/sprite.svg#icon-Burger"></use>
-        </svg>
+        <button class="btn btn_burger-menu" type="button" data-mobile-open>
+          <svg class="burger-menu" width="20">
+            <use href="./images/sprite.svg#icon-Burger"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu__container inactive" data-mobile>
+        <button class="btn btn__mobile_close" type="button" data-mobile-close>
+          <svg width="14" height="14">
+            <use href="./images/sprite.svg#icon-Burger-close"></use>
+          </svg>
+        </button>
 
-        <!-- put mobile menu here -->
+        <button class="btn btn_mobile-menu" type="button">
+          Buy now
+          <svg class="vector" width="5.26" height="8">
+            <use href="./images/sprite.svg#icon-btn-vector"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="#home"></a>
+            Home
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="#about"></a>
+            About us
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="#how_its_made"></a>
+            How it’s made?
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="#products"></a>
+            Our products
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="#contact"></a>
+            Contact
+          </li>
+        </ul>
       </div>
     </header>
 
     <!-- main -->
     <main>
       <!-- hero section -->
-      <div class="section">
-        <section class="hero container">
+      <section class="section">
+        <div class="hero container">
+          <h1 class="hero__title">
+            ice cream made with <span class="hero__title_accent">passion</span>
+          </h1>
+          <button class="btn btn_pink" type="button">Products</button>
+          <button class="btn btn_white" type="button">How it’s made?</button>
+
           <picture class="hero-ellipse">
             <source
               srcset="
@@ -92,13 +135,8 @@
               alt="hero ice background"
             />
           </picture>
-          <h1 class="hero__title">
-            ice cream made with <span class="hero__title_accent">passion</span>
-          </h1>
-          <button class="btn btn_pink" type="button">Products</button>
-          <button class="btn btn_white" type="button">How it’s made?</button>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- products section -->
       <section class="products section">
@@ -142,5 +180,7 @@
     <!-- footer -->
 
     <footer></footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
